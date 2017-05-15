@@ -1,0 +1,54 @@
+<resources>
+    <!--resources that don't need translations-->
+    <string name="app_name">Whispers</string>
+    <string name="preferences_to_learn_language_key">To Learn</string>
+    <string name="preferences_to_teach_language_key">To Teach</string>
+    <string name="preferences_first_time_key">First time</string>
+
+    <!---resources that need translations-->
+    <string name="toolbar_credits_title">Credits</string>
+
+    <string name="bottom_navigation_learn">Study</string>
+    <string name="bottom_navigation_teach">Teach</string>
+    <string name="bottom_navigation_chat_list">List</string>
+
+    <string name="onboarding_finish">Let\'s start!</string>
+    <string name="onboarding_next">next</string>
+
+    <string name="onboarding1_title">Let\'s play the telephone game and learn a language!</string>
+    <string name="onboarding1_explanation">Try to successfully communicate a foreign phrase between 5 people.\n
+    The phrase is passed on between native speakers and learners.
+    </string>
+
+    <string name="onboarding2_title">Credit System</string>
+    <string name="onboarding2_explanation">You will need credits to practice your listening and speaking skills.\n
+    You can earn credits by participating in your native tongue or successfully communicating a phrase from end to end!</string>
+    <string name="onboarding2_bonus_points">We have given you 500 credits to start off with.</string>
+    <string name="onboarding2_ending_message">Have fun learning!</string>
+
+    <string name="language_chooser_prompt">What language do you want to learn?</string>
+    <string name="language_chooser_confirm">Confirm</string>
+
+    <string name="final_answer_title">Final Answer!</string>
+    <string name="final_answer_prompt">What did he say?</string>
+    <string name="final_answer_confirm">OK</string>
+
+    <string name="phrase_display_prompt">Please record the following phrase</string>
+    <string name="phrase_display_confirm">OK</string>
+
+    <string name="voice_player_prompt">Please listen</string>
+    <string name="voice_player_confirm">OK</string>
+
+    <string name="voice_recorder_prompt_required">What do you think the person said?</string>
+    <string name="voice_recorder_prompt_optional">What do you think the person said? (optional)</string>
+    <string name="voice_recorder_confirm">OK</string>
+    <string name="voice_recorder_recording_error_message">Please provide a recording</string>
+
+    <string name="situation_list_no_credits">Not enough credits</string>
+    <string name="learn_start_no_chain">Unfortunately, there are no recordings available to listen to.</string>
+
+    <string name="chain_info_tab_recordings">Recordings</string>
+    <string name="chain_info_tab_chat">Chat</string>
+
+    <string name="chain_info_chat_send">Send</string>
+</resources>

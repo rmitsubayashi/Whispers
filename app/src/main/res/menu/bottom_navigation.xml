@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_navigation_learn"
+        android:title="@string/bottom_navigation_learn"
+        android:icon="@drawable/ic_learn"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/bottom_navigation_list"
+        android:title="@string/bottom_navigation_chat_list"
+        android:icon="@drawable/chat"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/bottom_navigation_teach"
+        android:title="@string/bottom_navigation_teach"
+        android:icon="@drawable/ic_teach"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+</menu>

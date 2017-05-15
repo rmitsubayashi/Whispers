@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    primary colors from
+    http://www.colorcombos.com/color-schemes/137/ColorCombo137.html
+    -->
+    <color name="colorPrimary">#31C3E7</color>
+    <color name="colorPrimaryDark">#085DAD</color>
+        <color name="colorAccent">#8CC739</color>
+    <color name="gray">#ADB6B5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="errorRed">#FF1744</color>
+</resources>

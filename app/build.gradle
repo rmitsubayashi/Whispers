@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "mugenglish.whispers"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        //for chat
+        manifestPlaceholders = [onesignal_app_id               : "aab06ef3-5c29-425c-8565-889c0b2d3d3b",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "116469905818"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            applicationIdSuffix ".debug"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //for easier time manipulation
+    //for chat
+    // Required - OneSignal SDK
+
+    // Required - Google Play Services GCM library (Needed even if you have FCM)
+
+    // Required for geotagging
+
+    // NOTE: All "com.google.android.gms:*" entries in gradle must match.
+    // 10.0.+ is recommed as this supports Android API level 9+ (2.3.3+)
+    // version 10.2.X and newer requires 14 (Android 4.0)
+
+    // Uncomment below line if using Google Play Version 8.1.0 or older
+    // compile 'com.google.android.gms:play-services-analytics:+'
+
+    // Required for Chrome Tab support.
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.firebase:firebase-database:10.2.1'
+    compile 'com.google.firebase:firebase-storage:10.2.1'
+    compile 'com.google.firebase:firebase-auth:10.2.1'
+    compile 'joda-time:joda-time:2.9.7'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.onesignal:OneSignal:3.5.1'
+    compile 'com.google.android.gms:play-services-gcm:10.2.1'
+    compile 'com.google.android.gms:play-services-location:10.2.1'
+    compile 'com.android.support:customtabs:25.3.1'
+    testCompile 'junit:junit:4.12'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

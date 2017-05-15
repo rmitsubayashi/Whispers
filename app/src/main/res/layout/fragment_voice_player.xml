@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/voice_player_prompt"
+        />
+    <!--disable until we load the file from storage-->
+    <ImageButton
+        android:id="@+id/voice_player_play_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_play_big"
+        android:enabled="false"
+        android:layout_marginBottom="24dp"
+        />
+
+    <Button
+        android:id="@+id/voice_player_confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:elevation="2dp"
+        android:text="@string/phrase_display_confirm"/>
+
+</LinearLayout>

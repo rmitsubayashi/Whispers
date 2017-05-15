@@ -1,0 +1,54 @@
+<resources>
+    <!--resources that don't need translations-->
+    <string name="app_name">Whispers</string>
+    <string name="preferences_to_learn_language_key">To Learn</string>
+    <string name="preferences_to_teach_language_key">To Teach</string>
+    <string name="preferences_first_time_key">First time</string>
+
+    <!---resources that need translations-->
+    <string name="toolbar_credits_title">クレジット</string>
+
+    <string name="bottom_navigation_learn">学習</string>
+    <string name="bottom_navigation_teach">教える</string>
+    <string name="bottom_navigation_chat_list">リスト</string>
+
+    <string name="onboarding_finish">始める!</string>
+    <string name="onboarding_next">次へ</string>
+
+    <string name="onboarding1_title">伝言ゲームで言語を学ぼう！</string>
+    <string name="onboarding1_explanation">５人の間で他言語の文を伝達しましょう！\n
+    文はネイティブと学習者の間で伝達されます。
+    </string>
+
+    <string name="onboarding2_title">クレジットに関して</string>
+    <string name="onboarding2_explanation">伝言ゲームで学習するにはクレジットが必要になります。\n
+    日本語での参加、伝言ゲーム成功でクレジットを加算できます。</string>
+    <string name="onboarding2_bonus_points">初回限定で500クレジットをプレゼントします!</string>
+    <string name="onboarding2_ending_message">頑張って勉強してください！</string>
+
+    <string name="language_chooser_prompt">どの言語を学びたいですか?</string>
+    <string name="language_chooser_confirm">決定</string>
+
+    <string name="final_answer_title">最終回答!</string>
+    <string name="final_answer_prompt">何と言いましたか?</string>
+    <string name="final_answer_confirm">決定</string>
+
+    <string name="phrase_display_prompt">次の文を録音してください</string>
+    <string name="phrase_display_confirm">了解</string>
+
+    <string name="voice_player_prompt">次の音声を聞いてください</string>
+    <string name="voice_player_confirm">了解</string>
+
+    <string name="voice_recorder_prompt_required">何と言ったと思いますか?</string>
+    <string name="voice_recorder_prompt_optional">何と言ったと思いますか? (任意)</string>
+    <string name="voice_recorder_confirm">決定</string>
+    <string name="voice_recorder_recording_error_message">録音してください</string>
+
+    <string name="situation_list_no_credits">クレジットが足りません</string>
+    <string name="learn_start_no_chain">残念ながら音声がありません</string>
+
+    <string name="chain_info_tab_recordings">音声</string>
+    <string name="chain_info_tab_chat">チャット</string>
+
+    <string name="chain_info_chat_send">送信</string>
+</resources>
