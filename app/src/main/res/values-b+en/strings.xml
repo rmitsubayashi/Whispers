@@ -1,54 +1,242 @@
 <resources>
     <!--resources that don't need translations-->
-    <string name="app_name">Whispers</string>
     <string name="preferences_to_learn_language_key">To Learn</string>
     <string name="preferences_to_teach_language_key">To Teach</string>
     <string name="preferences_first_time_key">First time</string>
+    <string name="preferences_no_links_first_time_key">No Links First Time</string>
+    <string name="preferences_chain_list_first_time_key">Chain List First Time</string>
+    <string name="preferences_learn_end_first_time_key">Learn End First Time</string>
 
     <!---resources that need translations-->
-    <string name="toolbar_credits_title">Credits</string>
+    <string name="app_name">Whispers</string>
+    <string name="toolbar_title_link_history">Link History</string>
+    <string name="toolbar_title_chain_list">Chains</string>
+    <string name="toolbar_title_learn">Study</string>
+    <string name="toolbar_title_teach">Teach</string>
+    <string name="toolbar_title_chain_info">Chain Info</string>
+    <string name="toolbar_title_offline_mode">Offline Mode</string>
+
+
+    <!--when the user long-clicks the link icon-->
+    <string name="toolbar_links_title">Links</string>
 
     <string name="bottom_navigation_learn">Study</string>
     <string name="bottom_navigation_teach">Teach</string>
-    <string name="bottom_navigation_chat_list">List</string>
+    <string name="bottom_navigation_chat_list">Chains</string>
 
-    <string name="onboarding_finish">Let\'s start!</string>
+    <string name="onboarding_finish">Language?</string>
     <string name="onboarding_next">next</string>
 
-    <string name="onboarding1_title">Let\'s play the telephone game and learn a language!</string>
-    <string name="onboarding1_explanation">Try to successfully communicate a foreign phrase between 5 people.\n
-    The phrase is passed on between native speakers and learners.
+    <string name="onboarding1_title">Practice a foreign language!</string>
+    <string name="onboarding1_explanation">
+        Practice your speaking and listening skills with native speakers.
     </string>
 
-    <string name="onboarding2_title">Credit System</string>
-    <string name="onboarding2_explanation">You will need credits to practice your listening and speaking skills.\n
-    You can earn credits by participating in your native tongue or successfully communicating a phrase from end to end!</string>
-    <string name="onboarding2_bonus_points">We have given you 500 credits to start off with.</string>
-    <string name="onboarding2_ending_message">Have fun learning!</string>
+    <string name="onboarding2_title">Not a chore!</string>
+    <string name="onboarding2_explanation">
+        You are playing Chinese whispers, so have fun while practicing.
+    </string>
 
-    <string name="language_chooser_prompt">What language do you want to learn?</string>
+    <string name="onboarding3_title">You can play any time!</string>
+    <string name="onboarding3_explanation">
+        No need to wake up early in the morning or stay up late at night.\nPractice at your convenience.
+    </string>
+
+    <string name="onboarding2_how_to_play1_title">How to Play</string>
+    <string name="onboarding2_how_to_play1_description">
+        Listen to a native speaker.\nPass the message on to another native speaker.
+    </string>
+    <string name="onboarding2_how_to_play2_title">Team Play</string>
+    <string name="onboarding2_how_to_play2_description">
+        You will be playing Whispers in a team of five.
+    </string>
+    <string name="onboarding2_how_to_play3_title">Objective</string>
+    <string name="onboarding2_how_to_play3_description">
+        Try to communicate the message from Player 1 to Player 5 without making a mistake!
+    </string>
+
+    <string name="onboarding2_next">Next</string>
+    <string name="onboarding2_finish">Start!</string>
+    <string name="onboarding2_progress_bar_title">Registering user</string>
+
+    <string name="language_chooser_prompt">I want to learn</string>
     <string name="language_chooser_confirm">Confirm</string>
+
+    <string name="tutorial_toolbar_title">Tutorial</string>
+    <string name="tutorial_toolbar_info">Info</string>
+
+    <string name="tutorial_progress_bar_title">Registering user</string>
+
+    <string name="tutorial_bottom_sheet_start_description">
+        Let\'s go to \"study\" and select a category.
+    </string>
+
+    <string name="tutorial_bottom_sheet_situation_list_title">Great!</string>
+    <string name="tutorial_bottom_sheet_situation_list_description">
+        Now select a situation.
+    </string>
+
+    <string name="tutorial_situation_list_situation">Greetings 1</string>
+
+    <string name="tutorial_bottom_sheet_learn_start_title">Let\'s listen!</string>
+    <string name="tutorial_bottom_sheet_learn_start_description">Please listen to the voice.\n
+        Once you\'ve listened, continue on to the next page.</string>
+
+    <string name="tutorial_bottom_sheet_learn_end_title">Let\'s record!</string>
+    <string name="tutorial_bottom_sheet_learn_end_description">
+        Record what you think the previous person said.\n
+        You can listen to your recording by clicking the play button on the side.\n
+        You can also type what you meant to say, but this is optional.
+    </string>
+
+    <string name="tutorial_bottom_sheet_after_learn_end_title">Look!</string>
+    <string name="tutorial_bottom_sheet_after_learn_end_description">
+        It looks like someone listened to your recording!\n
+        Go to \"Chains\" to check it out.
+    </string>
+
+    <string name="tutorial_bottom_sheet_chain_list_title">Let\'s check!</string>
+    <string name="tutorial_bottom_sheet_chain_list_description">
+        Here we store all of the \"chains\" you have participated in.\n
+        You can hide or remove them by long-pressing.\n
+        For now, let\'s just check out our \"chain\".
+    </string>
+
+    <string name="tutorial_bottom_sheet_chain_info_title">What are "chains"?</string>
+    <string name="tutorial_bottom_sheet_chain_info_description">
+        A chain is a set of five people who work together to complete a game of Whispers.\n
+        The first, third, and fifth links are native speakers.\n
+        You can see more information about your chain here, like all the recordings and the participants\' typed guesses.\n
+        You can also chat with your chain mates.\n
+        Feel free to explore, and when you\'re done, let\'s try \"teach\".
+    </string>
+
+    <string name="tutorial_bottom_sheet_teach_start_title">Why play in your native language?</string>
+    <string name="tutorial_bottom_sheet_teach_start_description">
+        You will need \"links\" to play.\n
+        You can get these \"links\" by participating in your native language
+        by going to \"teach.\"\n
+        Now go up to the toolbar and click on your links.\n
+        Note that exiting the screen at any time during a game will not result in a penalty.
+    </string>
+    <string name="tutorial_teach_start_phrase">Welcome!</string>
+
+    <string name="tutorial_bottom_sheet_link_history_title">Almost done!</string>
+    <string name="tutorial_bottom_sheet_link_history_description">
+        You can view a history of your links here.\n
+        Notice that you spend 100 links to learn, get 25 links for a successful chain
+        (learn or teach), and get 75 links for teaching.\n\n
+        Now you are ready to start learning!\n
+        Complete the tutorial by clicking \"Study\" and receive your free 1000 links!
+    </string>
+
+    <string name="main_activity_completed">Complete!</string>
+    <string name="main_activity_login_reward_title">Thank you for logging in!</string>
+    <string name="main_activity_login_reward_message">You received 100 links.\nCome back tomorrow to get more rewards!</string>
+    <string name="main_activity_login_confirm">OK</string>
 
     <string name="final_answer_title">Final Answer!</string>
     <string name="final_answer_prompt">What did he say?</string>
-    <string name="final_answer_confirm">OK</string>
+    <string name="final_answer_submit">Confirm</string>
+    <string name="final_answer_error_message">Please enter something</string>
 
     <string name="phrase_display_prompt">Please record the following phrase</string>
     <string name="phrase_display_confirm">OK</string>
 
     <string name="voice_player_prompt">Please listen</string>
-    <string name="voice_player_confirm">OK</string>
+    <string name="voice_player_confirm">Next</string>
 
     <string name="voice_recorder_prompt_required">What do you think the person said?</string>
-    <string name="voice_recorder_prompt_optional">What do you think the person said? (optional)</string>
+    <string name="voice_recorder_prompt_optional">What do you think the person said?\n
+        (keyboard input is optional)</string>
+    <string name="voice_recorder_edittext_hint">Keyboad Input</string>
     <string name="voice_recorder_confirm">OK</string>
     <string name="voice_recorder_recording_error_message">Please provide a recording</string>
+    <string name="voice_recorder_permission_required_title">Please enable audio permissions</string>
+    <string name="voice_recorder_permission_required_button">Settings</string>
 
-    <string name="situation_list_no_credits">Not enough credits</string>
-    <string name="learn_start_no_chain">Unfortunately, there are no recordings available to listen to.</string>
+
+    <string name="no_links_title">You ran out of links!</string>
+    <string name="no_links_call_to_action">Get More</string>
+
+    <string name="no_links_first_time_link">Links</string>
+    <string name="no_links_first_time_explanation">You will need links to play.</string>
+    <string name="no_links_first_time_prompt">Get more by</string>
+    <string name="no_links_first_time_option1">1. Playing (teaching) in English.</string>
+    <string name="no_links_first_time_option1_link">Playing (teaching)</string>
+    <string name="no_links_first_time_option2">2. Clearing a game successfully either in English or the language you are learning.</string>
+
+    <string name="learn_start_no_chain_title">There are no chains available</string>
+    <string name="learn_start_no_chain_suggestion">These situations are available for you now.\n</string>
+    <string name="learn_start_no_chain_no_suggestions">
+        Unfortunately there are no chains available in other situations as well.\n
+        Please share Whispers with your friends and make it popular!
+    </string>
+
+    <string name="learn_end_go_back">You might be given a different message. Continue?</string>
+    <string name="learn_end_go_back_continue">Continue</string>
+    <string name="learn_end_go_back_cancel">Cancel</string>
+    <string name="learn_end_first_time_title">You participated in your first chain!</string>
+    <string name="learn_end_first_time_explanation">We will notify you when a native speaker listens to your recording, so go ahead and stock up on chains!</string>
+    <string name="learn_end_first_time_explanation_confirm">Got it!</string>
+
+    <string name="chain_list_item_hide">Hide</string>
+    <string name="chain_list_item_prevent_push">Prevent Push Notifications</string>
+    <string name="chain_list_item_remove">Remove</string>
+    <string name="chain_list_item_remove_completed">Chain Removed</string>
+    <string name="chain_list_item_remove_undo">Undo</string>
+    <string name="chain_list_no_chains_title">Your chains have disappeared!</string>
+    <string name="chain_list_no_chains_description">Go to \"Study\" or \"Teach\" to get more</string>
+
+    <string name="chain_list_first_time_title">What are these icons?</string>
+    <string name="chain_list_first_time_check_me">Me</string>
+    <string name="chain_list_first_time_check">Somebody else</string>
+    <string name="chain_list_first_time_empty">Waiting</string>
+    <string name="chain_list_first_time_swipe_down">Swipe down to dismiss</string>
 
     <string name="chain_info_tab_recordings">Recordings</string>
     <string name="chain_info_tab_chat">Chat</string>
 
+    <string name="chain_info_recordings_successful">Success!</string>
+    <string name="chain_info_recordings_failed">Failed! The correct phrase was \n%1$s</string>
+    <string name="chain_info_recordings_guess_title">I thought Person %1$d said&#8230;</string>
+    <string name="chain_info_recordings_no_answer">No Answer</string>
+
+    <string name="chain_info_chat_no_connection_submit">We will send your message when you connect to the internet.</string>
+    <string name="chain_info_chat_no_connection_sent">Message sent</string>
+    <string name="chain_info_chat_pending_messages_below">Pending messages</string>
     <string name="chain_info_chat_send">Send</string>
+    <string name="chain_info_chat_item_player_number">Player %1$d</string>
+
+    <string name="time_expired_title">You left the screen!</string>
+    <string name="time_expired_explanation">We didn\'t want to keep the other people on the chain waiting, so we put your chain back.</string>
+    <string name="time_expired_prompt">Please go get another chain!</string>
+    <string name="time_expired_go_back">Go back</string>
+
+    <string name="link_history_transaction_type_purchase">Buy</string>
+    <string name="link_history_transaction_type_learn">Study</string>
+    <string name="link_history_transaction_type_cancel_learn">Cancel</string>
+    <string name="link_history_transaction_type_teach">Teach</string>
+    <string name="link_history_transaction_type_successful_chain">Successful Chain</string>
+    <string name="link_history_transaction_type_login_reward">Daily Login</string>
+    <string name="link_history_today">Today</string>
+    <string name="link_history_yesterday">Yesterday</string>
+    <string name="link_history_no_history_title">You have no history!</string>
+    <string name="link_history_no_history_suggestion">Go to \"Study\" or \"Teach\" to make history</string>
+
+    <string name="link_purchase_title">How many chains do you want?</string>
+    <string name="link_purchase_confirm">Buy</string>
+    <string name="link_purchase_cancel">Cancel</string>
+
+    <string name="offline_title">You are offline.</string>
+    <string name="offline_suggestion">Try our offline mode until your connection improves.</string>
+    <string name="offline_suggestion_button">Play Now</string>
+
+    <string name="offline_mode_no_recordings_title">No more recordings in stock</string>
+    <string name="offline_mode_no_recordings_description">We will restock when you are online.</string>
+
+    <string name="offline_mode_result_correct">Correct!</string>
+    <string name="offline_mode_result_incorrect">Incorrect</string>
+    <string name="offline_mode_result_incorrect_feedback">The correct answer was \n%1$s</string>
+    <string name="offline_mode_result_next">Next Recording</string>
 </resources>

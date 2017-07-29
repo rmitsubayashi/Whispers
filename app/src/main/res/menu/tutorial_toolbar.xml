@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/tutorial_toolbar_info"
+        app:actionLayout="@layout/inflatable_tutorial_menu_item_info"
+        android:title="@string/tutorial_toolbar_info"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/tutorial_toolbar_links"
+        app:actionLayout="@layout/inflatable_tutorial_menu_item_links"
+        android:title="@string/toolbar_links_title"
+        app:showAsAction="ifRoom"
+        />
+</menu>

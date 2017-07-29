@@ -6,10 +6,16 @@
     -->
     <color name="colorPrimary">#31C3E7</color>
     <color name="colorPrimaryDark">#085DAD</color>
-        <color name="colorAccent">#8CC739</color>
+    <color name="colorAccent">#8CC739</color>
+    <color name="colorAccentDark">#709F2D</color>
     <color name="gray">#ADB6B5</color>
 
     <color name="white">#ffffff</color>
     <color name="transparent">#00ffffff</color>
+    <!--material guidelines for error text-->
     <color name="errorRed">#FF1744</color>
+    <!--red 400 for error popup bar-->
+    <color name="red">#EF5350</color>
+    <!--for toolbar dimming-->
+    <color name="dimmedColorPrimary">#8031C3E7</color>
 </resources>

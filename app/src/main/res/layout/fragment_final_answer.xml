@@ -25,15 +25,17 @@
         android:layout_height="wrap_content"
         android:inputType="textAutoCorrect"
         android:layout_marginBottom="24dp"/>
+    <TextView
+        android:id="@+id/final_answer_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/errorRed"/>
     <Button
         android:id="@+id/final_answer_confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/white"
-        android:elevation="2dp"
-        android:text="@string/phrase_display_confirm"/>
+        android:text="@string/final_answer_submit"/>
 
 </LinearLayout>

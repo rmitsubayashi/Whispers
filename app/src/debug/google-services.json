@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "497523911930",
-    "firebase_url": "https://whispers-debug.firebaseio.com",
-    "project_id": "whispers-debug",
-    "storage_bucket": "whispers-debug.appspot.com"
+    "project_number": "575331347728",
+    "firebase_url": "https://whispers-debug-ad6ac.firebaseio.com",
+    "project_id": "whispers-debug-ad6ac",
+    "storage_bucket": "whispers-debug-ad6ac.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:497523911930:android:632aed70e04c511c",
+        "mobilesdk_app_id": "1:575331347728:android:09cb3b6e8371b48e",
         "android_client_info": {
-          "package_name": "mugenglish.whispers.debug"
+          "package_name": "com.linnca.whispers.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "497523911930-vodvnp8l234hvo9ir2e66f9qqsvfibs1.apps.googleusercontent.com",
+          "client_id": "575331347728-jn356765a95q5c4iinv1vvpb00c3cd6o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCWrbHd72rW1lwgQ8bBbHbdeWgZVVyyMKE"
+          "current_key": "AIzaSyCKk2GzC1wR7Ux73dRhhUHnospk4fVp8Qc"
         }
       ],
       "services": {

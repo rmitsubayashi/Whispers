@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--using the same as the inflatable, but using the plain box color
+    because we don't need to select it
+    -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="64dp"
+                    android:background="@drawable/box_accent_color_border"
+                    android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/tutorial_link_history_change_in_links_teach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:textColor="@color/colorAccent"
+            android:text="+75"/>
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_date_teach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_link_history_change_in_links_teach"
+            android:layout_alignLeft="@id/tutorial_link_history_change_in_links_teach"
+            android:layout_alignStart="@id/tutorial_link_history_change_in_links_teach"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="Today"
+            />
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_time_teach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_link_history_transaction_date_teach"
+            android:layout_alignLeft="@id/tutorial_link_history_change_in_links_teach"
+            android:layout_alignStart="@id/tutorial_link_history_change_in_links_teach"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="6:30PM"
+            />
+
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_type_teach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="34sp"
+            android:text="@string/link_history_transaction_type_teach"
+            />
+
+        <!--
+        <TextView
+            android:id="@+id/link_history_situation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@id/link_history_transaction_type"
+            android:layout_alignLeft="@id/link_history_transaction_type"
+            android:layout_alignStart="@id/link_history_transaction_type"
+            android:textSize="16sp"
+            android:text="A Night at a restaurant"
+            />
+            -->
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="64dp"
+                    android:background="@drawable/box_accent_color_border"
+                    android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/tutorial_link_history_change_in_links_chain_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:textColor="@color/colorAccent"
+            android:text="+25"/>
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_date_chain_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_link_history_change_in_links_chain_success"
+            android:layout_alignLeft="@id/tutorial_link_history_change_in_links_chain_success"
+            android:layout_alignStart="@id/tutorial_link_history_change_in_links_chain_success"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="Today"
+            />
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_time_chain_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_link_history_transaction_date_chain_success"
+            android:layout_alignLeft="@id/tutorial_link_history_change_in_links_chain_success"
+            android:layout_alignStart="@id/tutorial_link_history_change_in_links_chain_success"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="6:30PM"
+            />
+
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_type_chain_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="34sp"
+            android:text="@string/link_history_transaction_type_successful_chain"
+            />
+
+        <!--
+        <TextView
+            android:id="@+id/link_history_situation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@id/link_history_transaction_type"
+            android:layout_alignLeft="@id/link_history_transaction_type"
+            android:layout_alignStart="@id/link_history_transaction_type"
+            android:textSize="16sp"
+            android:text="A Night at a restaurant"
+            />
+            -->
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="64dp"
+                    android:background="@drawable/box_red_color_border"
+                    android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/tutorial_link_history_change_in_links_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:textColor="@color/red"
+            android:text="-100"/>
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_date_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_link_history_change_in_links_learn"
+            android:layout_alignLeft="@id/tutorial_link_history_change_in_links_learn"
+            android:layout_alignStart="@id/tutorial_link_history_change_in_links_learn"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="Today"
+            />
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_time_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_link_history_transaction_date_learn"
+            android:layout_alignLeft="@id/tutorial_link_history_change_in_links_learn"
+            android:layout_alignStart="@id/tutorial_link_history_change_in_links_learn"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="6:30PM"
+            />
+
+        <TextView
+            android:id="@+id/tutorial_link_history_transaction_type_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="34sp"
+            android:text="@string/link_history_transaction_type_learn"
+            />
+
+        <!--
+        <TextView
+            android:id="@+id/link_history_situation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@id/link_history_transaction_type"
+            android:layout_alignLeft="@id/link_history_transaction_type"
+            android:layout_alignStart="@id/link_history_transaction_type"
+            android:textSize="16sp"
+            android:text="A Night at a restaurant"
+            />
+            -->
+
+    </RelativeLayout>
+
+</LinearLayout>

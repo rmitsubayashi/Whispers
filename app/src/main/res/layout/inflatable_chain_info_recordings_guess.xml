@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--will change the background based on whether it's the user's guess-->
+<LinearLayout
+    android:id="@+id/chain_info_recordings_guess_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="36dp"
+    android:layout_marginRight="36dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="12dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/chain_info_recordings_guess_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/chain_info_recordings_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="16sp"/>
+</LinearLayout>

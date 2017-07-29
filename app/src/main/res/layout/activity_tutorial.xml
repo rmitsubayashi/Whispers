@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linnca.whispers.gui.tutorial.Tutorial">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tutorial_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/tutorial_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation"
+        app:itemTextColor="@color/bottom_navigation_color"
+        app:itemIconTint="@null"
+        />
+
+    <!--where the fragment goes-->
+    <FrameLayout
+        android:id="@+id/tutorial_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tutorial_bottom_navigation"
+        android:layout_below="@id/tutorial_toolbar"/>
+
+    <!--for when the user is registering-->
+    <ProgressBar
+        android:id="@+id/tutorial_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tutorial_progress_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tutorial_progress_bar"
+        android:textSize="16sp"
+        android:text="@string/tutorial_progress_bar_title"
+        android:visibility="gone"/>
+</RelativeLayout>

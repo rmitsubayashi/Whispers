@@ -1,16 +1,49 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <!--on landscape mode the bottom sheet for tutorial only partially shows since
+        the ratio of bottom sheet height to device height is above 19:6
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        -->
+        <item name="android:spinnerDropDownItemStyle">@style/AppSpinnerDropdownTheme</item>
     </style>
 
-    <!--setting a window background is apparantly the best way to go with splash screens-->
+    <!--
+    <style name="AppBottomSheetDialogTheme"
+           parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>-->
+
+    <style name="AppSpinnerDropdownTheme"
+           parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--
+    <style name="AppModalStyle"
+           parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">256dp</item>
+    </style>-->
+    <style name="NoPeekBottomSheet">
+        <item name="behavior_peekHeight">0dp</item>
+    </style>
+
+    <!--setting a window background is apparently the best way to go with splash screens-->
     <style name="SplashTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:height">41dp</item>
     </style>
 
 </resources>

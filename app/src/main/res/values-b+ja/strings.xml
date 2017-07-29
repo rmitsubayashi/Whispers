@@ -1,54 +1,239 @@
 <resources>
     <!--resources that don't need translations-->
-    <string name="app_name">Whispers</string>
     <string name="preferences_to_learn_language_key">To Learn</string>
     <string name="preferences_to_teach_language_key">To Teach</string>
     <string name="preferences_first_time_key">First time</string>
+    <string name="preferences_no_links_first_time_key">No Links First Time</string>
+    <string name="preferences_chain_list_first_time_key">Chain List First Time</string>
+    <string name="preferences_learn_end_first_time_key">Learn End First Time</string>
 
     <!---resources that need translations-->
-    <string name="toolbar_credits_title">クレジット</string>
+    <string name="app_name">ウィスパー</string>
+
+    <string name="toolbar_title_link_history">リンク履歴</string>
+    <string name="toolbar_title_chain_list">チェイン</string>
+    <string name="toolbar_title_learn">学習</string>
+    <string name="toolbar_title_teach">教える</string>
+    <string name="toolbar_title_chain_info">チェイン情報</string>
+    <string name="toolbar_title_offline_mode">オフラインモード</string>
+
+
+    <!--when the user long-clicks the link icon-->
+    <string name="toolbar_links_title">リンク</string>
 
     <string name="bottom_navigation_learn">学習</string>
     <string name="bottom_navigation_teach">教える</string>
-    <string name="bottom_navigation_chat_list">リスト</string>
+    <string name="bottom_navigation_chat_list">チェイン</string>
 
-    <string name="onboarding_finish">始める!</string>
+    <string name="onboarding_finish">言語を選択</string>
     <string name="onboarding_next">次へ</string>
 
-    <string name="onboarding1_title">伝言ゲームで言語を学ぼう！</string>
-    <string name="onboarding1_explanation">５人の間で他言語の文を伝達しましょう！\n
-    文はネイティブと学習者の間で伝達されます。
+    <string name="onboarding1_title">外国語を勉強しよう！</string>
+    <string name="onboarding1_explanation">
+        リスニングとスピーキングをネイティブスピーカーと練習できます。
     </string>
 
-    <string name="onboarding2_title">クレジットに関して</string>
-    <string name="onboarding2_explanation">伝言ゲームで学習するにはクレジットが必要になります。\n
-    日本語での参加、伝言ゲーム成功でクレジットを加算できます。</string>
-    <string name="onboarding2_bonus_points">初回限定で500クレジットをプレゼントします!</string>
-    <string name="onboarding2_ending_message">頑張って勉強してください！</string>
-
-    <string name="language_chooser_prompt">どの言語を学びたいですか?</string>
+    <string name="language_chooser_prompt">私が勉強したいのは</string>
     <string name="language_chooser_confirm">決定</string>
+
+    <string name="onboarding2_title">楽しく練習！</string>
+    <string name="onboarding2_explanation">
+        伝言ゲーム形式なので、ゲーム感覚で楽しく練習できます。
+    </string>
+
+    <string name="onboarding3_title">いつでもできる！</string>
+    <string name="onboarding3_explanation">
+        外国人と時間を合わせる必要はありません。\n
+        自分の好きな時間に練習しましょう。
+    </string>
+
+    <string name="onboarding2_how_to_play1_title">遊び方</string>
+    <string name="onboarding2_how_to_play1_description">
+        ネイティブのメッセージを聞いて、\nそして別のネイティブに伝言しましょう。
+    </string>
+    <string name="onboarding2_how_to_play2_title">チームプレイ</string>
+    <string name="onboarding2_how_to_play2_description">
+        5人で協力して伝言ゲームに挑戦します。
+    </string>
+    <string name="onboarding2_how_to_play3_title">ゲームの目的</string>
+    <string name="onboarding2_how_to_play3_description">
+        プレイヤー１からプレイヤー5までミスなしで伝言しましょう。
+    </string>
+
+    <string name="onboarding2_next">次へ</string>
+    <string name="onboarding2_finish">始める!</string>
+    <string name="onboarding2_progress_bar_title">ユーザー登録中</string>
+
+    <string name="tutorial_toolbar_title">チュートリアル</string>
+    <string name="tutorial_toolbar_info">情報</string>
+
+    <string name="tutorial_progress_bar_title">ユーザー登録中</string>
+
+    <string name="tutorial_bottom_sheet_start_title">ようこそ!</string>
+    <string name="tutorial_bottom_sheet_start_description">
+        「学習」から好きなカテゴリーを選択しましょう。
+    </string>
+
+    <string name="tutorial_bottom_sheet_situation_list_title">オッケー!</string>
+    <string name="tutorial_bottom_sheet_situation_list_description">
+        ではカテゴリーを選択してください。
+    </string>
+
+    <string name="tutorial_situation_list_situation">あいさつ1</string>
+
+    <string name="tutorial_bottom_sheet_learn_start_title">まずは聴いてみよう！</string>
+    <string name="tutorial_bottom_sheet_learn_start_description">
+        ネイティブスピーカーの音声を聴いてください。
+        </string>
+
+    <string name="tutorial_bottom_sheet_learn_end_title">録音しよう!</string>
+    <string name="tutorial_bottom_sheet_learn_end_description">
+        先ほど聴いた言葉をそのまま録音してください。\n
+        キーボード入力は任意です。
+    </string>
+
+    <string name="tutorial_bottom_sheet_after_learn_end_title">見てください!</string>
+    <string name="tutorial_bottom_sheet_after_learn_end_description">
+        誰かが録音を聞いてくれたみたいです。\n
+        「チェイン」から確認しましょう。
+    </string>
+
+    <string name="tutorial_bottom_sheet_chain_list_title">確認してみよう!</string>
+    <string name="tutorial_bottom_sheet_chain_list_description">
+        先ほどの「チェイン」の詳細を見てみましょう。
+    </string>
+
+    <string name="tutorial_bottom_sheet_chain_info_title">チェインとは?</string>
+    <string name="tutorial_bottom_sheet_chain_info_description">
+        ネイティブ→学習者→ネイティブ→学習者→ネイティブの順でチェインを繋げていきます。\n
+        詳細ページの機能を確認出来たら、「教える」を見に行きましょう。
+    </string>
+
+    <string name="tutorial_bottom_sheet_teach_start_title">なぜ母国語で？</string>
+    <string name="tutorial_bottom_sheet_teach_start_description">
+        遊ぶには「リンク」が必要になります。\n
+        この「リンク」は「教える」で母国語で遊ぶと獲得できます。\n
+        ではタイトルバーに表示されている「リンク」をクリックしましょう。\n
+        注）途中でゲームを離れても、ペナルティはありません。
+    </string>
+    <string name="tutorial_teach_start_phrase">ようこそ!</string>
+
+    <string name="tutorial_bottom_sheet_link_history_title">もうすぐ！</string>
+    <string name="tutorial_bottom_sheet_link_history_description">
+        ここではリンクの履歴が見れます。\n
+        勉強するのには100リンクが必要で、チェイン成功（勉強、教える両方）は25リンク、
+        教えると75リンクを獲得できます。\n\n
+        これで勉強する準備ができました！\n
+        「学習」を押してチュートリアルを終了してください。\n
+        -チュートリアル終了の報酬として1000リンクを入手しました。
+    </string>
+
+    <string name="main_activity_completed">完了!</string>
+    <string name="main_activity_login_reward_title">ログインしてくれてありがとう!</string>
+    <string name="main_activity_login_reward_message">100リンクを獲得しました。\n明日も来てリンクを獲得してください!</string>
+    <string name="main_activity_login_confirm">了解</string>
 
     <string name="final_answer_title">最終回答!</string>
     <string name="final_answer_prompt">何と言いましたか?</string>
-    <string name="final_answer_confirm">決定</string>
+    <string name="final_answer_submit">決定</string>
+    <string name="final_answer_error_message">解答が空欄です</string>
 
     <string name="phrase_display_prompt">次の文を録音してください</string>
     <string name="phrase_display_confirm">了解</string>
 
     <string name="voice_player_prompt">次の音声を聞いてください</string>
-    <string name="voice_player_confirm">了解</string>
+    <string name="voice_player_confirm">次へ</string>
 
     <string name="voice_recorder_prompt_required">何と言ったと思いますか?</string>
-    <string name="voice_recorder_prompt_optional">何と言ったと思いますか? (任意)</string>
+    <string name="voice_recorder_prompt_optional">何と言ったと思いますか? \n(キーボード入力は任意)</string>
+    <string name="voice_recorder_edittext_hint">キーボード入力</string>
     <string name="voice_recorder_confirm">決定</string>
     <string name="voice_recorder_recording_error_message">録音してください</string>
+    <string name="voice_recorder_permission_required_title">録音を許可してください</string>
+    <string name="voice_recorder_permission_required_button">設定</string>
 
-    <string name="situation_list_no_credits">クレジットが足りません</string>
-    <string name="learn_start_no_chain">残念ながら音声がありません</string>
+    <string name="no_links_title">リンクが足りないです!</string>
+    <string name="no_links_call_to_action">リンクをゲットする</string>
+
+    <string name="no_links_first_time_link">リンク</string>
+    <string name="no_links_first_time_explanation">遊ぶためにはリンクが必要です。</string>
+    <string name="no_links_first_time_prompt">以下の方法でリンクを獲得できます。</string>
+    <string name="no_links_first_time_option1">1. 日本語で遊ぶ（教える）</string>
+    <string name="no_links_first_time_option1_link">遊ぶ（教える）</string>
+    <string name="no_links_first_time_option2">2. 日本語または学習している言語でゲームを成功させる。</string>
+
+    <string name="learn_start_no_chain_title">チェインがありません</string>
+    <string name="learn_start_no_chain_suggestion">このカテゴリーはどうでしょうか\n</string>
+    <string name="learn_start_no_chain_no_suggestions">
+        残念ながらほかのカテゴリーにもチェインがありません。\n
+        ウィスパーを友達に紹介して、人気アプリにしてください！
+    </string>
+
+    <string name="learn_end_go_back">別のメッセージが選択されるかもしれないです。続行しますか。</string>
+    <string name="learn_end_go_back_continue">続行</string>
+    <string name="learn_end_go_back_cancel">戻る</string>
+    <string name="learn_end_first_time_title">初めてのチェインに参加しました!</string>
+    <string name="learn_end_first_time_explanation">ネイティブスピーカーが今の音声を聴いてくれたら通知しますので、どんどんチェインに参加しましょう!</string>
+    <string name="learn_end_first_time_explanation_confirm">了解</string>
+
+    <string name="chain_list_item_hide">隠す</string>
+    <string name="chain_list_item_prevent_push">プッシュ通知を非表示</string>
+    <string name="chain_list_item_remove">消去</string>
+    <string name="chain_list_item_remove_completed">チェインを消しました</string>
+    <string name="chain_list_item_remove_undo">元に戻す</string>
+    <string name="chain_list_no_chains_title">チェインが消えました！</string>
+    <string name="chain_list_no_chains_description">「学習」か「教える」でゲットしましょう。</string>
+
+    <string name="chain_list_first_time_title">このアイコンは?</string>
+    <string name="chain_list_first_time_check_me">自分</string>
+    <string name="chain_list_first_time_check">ほかの誰か</string>
+    <string name="chain_list_first_time_empty">参加待ち</string>
+    <string name="chain_list_first_time_swipe_down">下スワイプで隠す</string>
 
     <string name="chain_info_tab_recordings">音声</string>
     <string name="chain_info_tab_chat">チャット</string>
 
+    <string name="chain_info_recordings_successful">成功！</string>
+    <!--intentional spaces-->
+    <string name="chain_info_recordings_failed">失敗！正解は\n  %1$s\nでした</string>
+    <string name="chain_info_recordings_guess_title">%1$d人目が言ったのは～</string>
+    <string name="chain_info_recordings_no_answer">解答なし</string>
+
+    <string name="chain_info_chat_no_connection_submit">ネットに接続されたらメッセージを送信します</string>
+    <string name="chain_info_chat_no_connection_sent">メッセージが送信されました</string>
+    <string name="chain_info_chat_pending_messages_below">メッセージ送信待ち</string>
     <string name="chain_info_chat_send">送信</string>
+    <string name="chain_info_chat_item_player_number">%1$d人目</string>
+
+    <string name="time_expired_title">画面を離れました！</string>
+    <string name="time_expired_explanation">チェインの他の参加者を待たせないために、チェインを返さしてもらいました。</string>
+    <string name="time_expired_prompt">もう一度チェインを入手してください！</string>
+    <string name="time_expired_go_back">戻る</string>
+
+    <string name="link_history_transaction_type_purchase">購入</string>
+    <string name="link_history_transaction_type_learn">学習</string>
+    <string name="link_history_transaction_type_cancel_learn">キャンセル</string>
+    <string name="link_history_transaction_type_teach">教える</string>
+    <string name="link_history_transaction_type_successful_chain">チェイン成功</string>
+    <string name="link_history_transaction_type_login_reward">デイリーログイン</string>
+    <string name="link_history_today">今日</string>
+    <string name="link_history_yesterday">昨日</string>
+    <string name="link_history_no_history_title">履歴がありません</string>
+    <string name="link_history_no_history_suggestion">「学習」か「教える」に行き、歴史を作りましょう</string>
+
+    <string name="link_purchase_title">How many chains do you want?</string>
+    <string name="link_purchase_confirm">Buy</string>
+    <string name="link_purchase_cancel">Cancel</string>
+
+    <string name="offline_title">オフラインです</string>
+    <string name="offline_suggestion">接続できるまでオフラインモードで遊んでください。</string>
+    <string name="offline_suggestion_button">遊ぶ</string>
+
+    <string name="offline_mode_no_recordings_title">録音がもうありません</string>
+    <string name="offline_mode_no_recordings_description">ネットに接続したら補充します。</string>
+
+    <string name="offline_mode_result_correct">正解!</string>
+    <string name="offline_mode_result_incorrect">不正解</string>
+    <string name="offline_mode_result_incorrect_feedback">正解は  \n%1$s\nでした</string>
+    <string name="offline_mode_result_next">次の音声</string>
 </resources>

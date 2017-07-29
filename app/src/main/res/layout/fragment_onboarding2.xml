@@ -3,42 +3,32 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:padding="16dp"
-    >
+              android:paddingTop="48dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
     <TextView
+        android:id="@+id/onboarding2_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:text="@string/onboarding2_title"/>
+        android:textSize="24sp"/>
 
+    <!--the images for the second onboarding all have a lot of whitespace.
+    it may also be the white background.
+    but the space between the title and the image seems a lot spacier than the first onboarding.
+    so the top padding here is smaller-->
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
+        android:id="@+id/onboarding2_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:paddingTop="24dp"
-        android:paddingBottom="24dp"
-        android:src="@drawable/onboarding_credits"/>
+        android:paddingBottom="48dp"
+        android:layout_gravity="center"/>
 
     <TextView
+        android:id="@+id/onboarding2_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:text="@string/onboarding2_explanation"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="24dp"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:text="@string/onboarding2_bonus_points"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="24dp"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:text="@string/onboarding2_ending_message"/>
+        android:textSize="20sp"/>
+
 
 </LinearLayout>

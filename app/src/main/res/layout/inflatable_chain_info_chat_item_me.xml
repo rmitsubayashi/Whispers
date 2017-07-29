@@ -18,6 +18,7 @@
         android:layout_margin="2dp"
         android:background="@color/colorAccent"
         android:textColor="@color/white"
-        android:textSize="13sp"/>
+        android:textSize="13sp"
+        android:textIsSelectable="true"/>
 
 </RelativeLayout>

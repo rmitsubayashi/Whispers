@@ -1,80 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_recorder_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp">
-
-    <!--the prompt is different for different users-->
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    >
+    <!--the prompt is different based on chain link-->
     <TextView
-        android:id="@+id/voice_recorder_prompt"
-        android:layout_width="match_parent"
+        android:id="@+id/voice_recorder_user_input_prompt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"
         />
-    <TextView
-        android:id="@+id/voice_recorder_recording_error_message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:textColor="@color/errorRed"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="210dp">
-        <ImageButton
-            android:id="@+id/voice_recorder_play_button"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:background="@drawable/round_button"
-            android:src="@drawable/ic_play"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="16dp"
-            android:elevation="8dp"/>
-        <ImageButton
-            android:id="@+id/voice_recorder_record_button"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/round_button"
-            android:elevation="8dp"
-            android:src="@drawable/ic_record"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
-    </RelativeLayout>
-    <LinearLayout
-        android:id="@+id/voice_recorder_user_input_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <!--the prompt is different based on chain link-->
-        <TextView
-            android:id="@+id/voice_recorder_user_input_prompt"
+        android:layout_height="160dp">
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="@color/gray"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp">
+            <!--we want the button to be disabled (enabled = false + alpha) before the media is loaded-->
+            <ImageButton
+                android:id="@+id/voice_recorder_play_button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_button"
+                android:src="@drawable/ic_play"
+                />
+            <ProgressBar
+                android:id="@+id/voice_recorder_play_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar_circle"
+                />
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/voice_recorder_record_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button"
+            android:src="@drawable/ic_record"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
             />
-        <EditText
-            android:id="@+id/voice_recorder_user_input_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginBottom="24dp"/>
-
-    </LinearLayout>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/voice_recorder_user_input_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        android:hint="@string/voice_recorder_edittext_hint"/>
+    <TextView
+    android:id="@+id/voice_recorder_recording_error_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:textColor="@color/errorRed"/>
 
     <Button
         android:id="@+id/voice_recorder_confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/white"
-        android:elevation="2dp"
         android:text="@string/voice_recorder_confirm"/>
 
 </LinearLayout>

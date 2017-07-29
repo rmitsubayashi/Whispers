@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_recorder_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+        <!--the prompt is different based on chain link-->
+        <TextView
+            android:id="@+id/voice_recorder_user_input_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/voice_recorder_recording_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/errorRed"/>
+        <EditText
+            android:id="@+id/voice_recorder_user_input_edit_text"
+            android:inputType="textAutoCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textSize="16sp"
+            android:hint="@string/voice_recorder_edittext_hint"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+        <ImageButton
+            android:id="@+id/voice_recorder_record_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/ic_record"
+
+            android:elevation="8dp"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/voice_recorder_record_button"
+            android:layout_toStartOf="@id/voice_recorder_record_button"
+            android:layout_alignBottom="@id/voice_recorder_record_button">
+            <!--we want the button to be disabled (enabled = false + alpha) before the media is loaded-->
+            <ImageButton
+                android:id="@+id/voice_recorder_play_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_button"
+                android:src="@drawable/ic_play"
+                />
+            <ProgressBar
+                android:id="@+id/voice_recorder_play_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar_circle"
+                />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/voice_recorder_confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/voice_recorder_confirm"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

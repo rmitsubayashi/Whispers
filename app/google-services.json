@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "116469905818",
-    "firebase_url": "https://whispers-68c93.firebaseio.com",
-    "project_id": "whispers-68c93",
-    "storage_bucket": "whispers-68c93.appspot.com"
+    "project_number": "915328284226",
+    "firebase_url": "https://whispers-b3f13.firebaseio.com",
+    "project_id": "whispers-b3f13",
+    "storage_bucket": "whispers-b3f13.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:116469905818:android:68ea64ebbb3af4e5",
+        "mobilesdk_app_id": "1:915328284226:android:ab8614726185b648",
         "android_client_info": {
-          "package_name": "mugenglish.whispers"
+          "package_name": "com.linnca.whispers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "116469905818-poqt2vcn3ca0933eo9ndt7mrhdqjlbco.apps.googleusercontent.com",
+          "client_id": "915328284226-kd9nad7krr8414oqjssubqom5v6op2mc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD0ZCmiZYs7y6VV7zPrPMtoNmVQGlxZk1s"
+          "current_key": "AIzaSyAIwAcWA8evjK65oOwjaq5z-aarJpNyHfg"
         }
       ],
       "services": {

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!--the title goes in the title-->
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <item
-        android:icon="@drawable/coin"
-        android:title="@string/toolbar_credits_title"
-        app:showAsAction="ifRoom"
-        />
-    <item
-        android:id="@+id/toolbar_credits"
-        android:title=""
+        android:id="@+id/toolbar_links"
+        app:actionLayout="@layout/inflatable_menu_item_links"
+        android:title="@string/toolbar_links_title"
         app:showAsAction="ifRoom"
         />
 </menu>

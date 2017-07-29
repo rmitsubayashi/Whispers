@@ -12,30 +12,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:textSize="20sp"
         android:text="@string/voice_player_prompt"
         />
     <!--disable until we load the file from storage-->
-    <ImageButton
-        android:id="@+id/voice_player_play_button"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:elevation="8dp"
-        android:background="@drawable/round_button"
-        android:src="@drawable/ic_play_big"
-        android:enabled="false"
-        android:layout_marginBottom="24dp"
-        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ProgressBar
+            android:id="@+id/voice_player_play_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_circle"
+            />
+        <ImageButton
+            android:id="@+id/voice_player_play_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_button"
+            android:src="@drawable/ic_play_big"
+            android:elevation="4dp"
+            />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/voice_player_confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/white"
-        android:elevation="2dp"
-        android:text="@string/phrase_display_confirm"/>
+        android:text="@string/voice_player_confirm"/>
 
 </LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/onboarding2_top_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linnca.whispers.gui.OnboardingActivity2">
+
+
+    <!--a line to separate the bottom navigation and main fragment
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:alpha="0.12"
+        android:background="@android:color/white" /> -->
+    <RelativeLayout
+        android:id="@+id/onboarding2_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <!--selected indicator is orange-->
+            <ImageView
+                android:id="@+id/onboarding2_indicator1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/orange_circle" />
+            <ImageView
+                android:id="@+id/onboarding2_indicator2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gray_circle" />
+            <ImageView
+                android:id="@+id/onboarding2_indicator3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gray_circle" />
+        </LinearLayout>
+        <!-- This overlaps the next button in the last slide -->
+        <Button
+            android:id="@+id/onboarding2_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/onboarding2_finish"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/onboarding2_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/onboarding2_next"/>
+    </RelativeLayout>
+
+
+    <com.linnca.whispers.gui.widgets.ViewPagerCustomDuration
+        android:id="@+id/onboarding2_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <ProgressBar
+        android:id="@+id/onboarding2_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/onboarding2_progress_bar_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onboarding2_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:text="@string/onboarding2_progress_bar_title"
+        />
+</RelativeLayout>

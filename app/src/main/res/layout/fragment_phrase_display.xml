@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     android:layout_margin="16dp">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="@string/phrase_display_prompt"/>
-    <TextView
         android:id="@+id/phrase_display_phrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/phrase_display_phrase"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:text="@string/phrase_display_prompt"/>
 
     <Button
         android:id="@+id/phrase_display_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/white"
-        android:elevation="2dp"
+        android:layout_below="@id/phrase_display_phrase"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:text="@string/phrase_display_confirm"/>
-</LinearLayout>
+</RelativeLayout>
